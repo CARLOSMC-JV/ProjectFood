@@ -1,0 +1,49 @@
+@import "@/styles/variables";
+
+.list {
+  margin-top: $spacing;
+  border: 1px solid $border-color;
+  border-radius: $border-radius-normal;
+  overflow: hidden;
+
+  &__item {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $border-color;
+    cursor: pointer;
+    margin: 0;
+
+    &:last-child {
+      border: none;
+    }
+
+    &:hover {
+      svg {
+        display: block;
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &__checkbox,
+  svg {
+    display: none;
+  }
+
+  &__checkbox:checked + svg {
+    display: block;
+    opacity: 1;
+  }
+
+  &--primary &__item {
+    background-color: $primary-color;
+    color: white;
+  }
+
+  &--secondary &__item {
+    background-color: $secondary-color;
+    color: white;
+  }
+}

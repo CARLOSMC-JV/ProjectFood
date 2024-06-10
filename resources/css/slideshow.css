@@ -1,0 +1,44 @@
+.slide-show-main .carousel__viewport .carousel__track .carousel__slide {
+  width: 100%;
+}
+.slide-show-main .carousel__viewport .carousel__track .carousel__slide .carousel__item {
+  margin: 0rem;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide-show-main .carousel__viewport .carousel__track .carousel__slide .carousel__item img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .slide-show-main .carousel .carousel__viewport {
+    height: 600px;
+  }
+  .slide-show-main .carousel .carousel__viewport .carousel__track {
+    height: 600px;
+  }
+  .slide-show-main .carousel .carousel__viewport .carousel__track .carousel__slide .carousel__item {
+    margin: 0rem;
+  }
+  .slide-show-main .carousel .carousel__viewport .carousel__track .carousel__slide .carousel__item img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+  .slide-show-main .carousel .carousel__viewport .carousel__track .carousel__slide img {
+    height: 600px;
+  }
+  .slide-show-main .carousel__pagination {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=slideshow.css.map */

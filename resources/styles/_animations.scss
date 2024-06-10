@@ -1,0 +1,110 @@
+$transition-slow-time: 500ms;
+$transition-fast-time: 300ms;
+$transition-faster-time: 100ms;
+
+// * SLIDE TRANSITION
+.transition__slide {
+    &-enter-active,
+    &-leave-active {
+        transition: transform 0.2s ease;
+    }
+    
+    &-enter,
+    &-leave-to {
+        transform: translateX(-100%);
+        transition: all 150ms ease-in 0s;
+    }    
+}
+
+// * SWIPE ANIMATION
+.transition__swipe-right {
+    &-enter-active,
+    &-leave-active {
+        transition: opacity $transition-fast-time ease-in-out, transform $transition-fast-time ease;
+    }
+    
+    &-enter-active {
+        transition-delay: $transition-fast-time;
+    }
+    
+    &-enter {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    
+    &-enter-to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+    &-leave {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+    &-leave-to {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+}
+
+// * FADE IN - OUT ANIMATION - STANDARD
+.transition__fade {
+    &-enter-active,
+    &-leave-active {
+        transition: all $transition-fast-time ease-in-out;
+    }
+
+    &-enter,
+    &-leave-to {
+        opacity: 0;
+    }
+}
+// * GROW AND SHRINK
+@mixin grow-and-shrink-animation {
+    @keyframes grow-and-shrink {
+        from {
+            transform: scale(1);
+        }
+
+        to {
+            transform: scale(1.05);
+        }
+    }
+
+    &:hover {
+        animation-name: grow-and-shrink;
+        animation-direction: alternate;
+
+        animation-duration: $transition-fast-time;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: none;
+        animation-play-state: running;
+    }
+}
+
+@keyframes grow-down {
+    0% {
+            transform: scaleY(0);
+            max-height: 0;
+        }
+
+    100% {
+        transform: scaleY(1);
+        max-height: 10rem;
+    }
+}
+
+.grow-down-enter-active {
+    animation: grow-down 250ms ease-in-out forwards;
+}
+.grow-down-leave-active {
+    animation: grow-down 250ms ease-in-out reverse;
+}
+
+@mixin grow-down-animation {
+    animation: grow-down $transition-fast-time ease-in-out forwards;
+    transform-origin: top center;
+}

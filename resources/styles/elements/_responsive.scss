@@ -1,0 +1,93 @@
+.hide {
+  display: none !important;
+
+  &--sm {
+    @include medium-down {
+      display: none !important;
+    }
+
+    &--only {
+      @include small-only {
+        display: none !important;
+      }
+    }
+  }
+
+  &--md {
+    @include large-down {
+      display: none !important;
+    }
+
+    &--only {
+      @include medium-only {
+        display: none !important;
+      }
+    }
+  }
+
+  &--lg {
+    @include xlarge-down {
+      display: none !important;
+    }
+
+    &--only {
+      @include large-only {
+        display: none !important;
+      }
+    }
+  }
+
+  &--xl {
+    &--only {
+      @include xlarge-only {
+        display: none !important;
+      }
+    }
+  }
+}
+
+.show {
+  &--sm {
+    @include medium {
+      display: none !important;
+    }
+
+    &--only {
+      @include small-except {
+        display: none !important;
+      }
+    }
+  }
+
+  &--md {
+    @include large {
+      display: none !important;
+    }
+
+    &--only {
+      @include medium-except {
+        display: none !important;
+      }
+    }
+  }
+
+  &--lg {
+    @include xlarge {
+      display: none !important;
+    }
+
+    &--only {
+      @include large-except {
+        display: none !important;
+      }
+    }
+  }
+
+  &--xl {
+    &--only {
+      @include xlarge-except {
+        display: none !important;
+      }
+    }
+  }
+}

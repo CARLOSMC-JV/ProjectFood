@@ -1,0 +1,18 @@
+// * IMPORT RESET FIRST
+@import "reset";
+@import "crossbrowser";
+
+// * IMPORT VARIABLES
+@import "variables";
+@import "breakpoints";
+@import "mixins";
+
+// * AND THEN CREATE THE GLOBAL CALSSES
+@import "components";
+@import "elements";
+@import "fonts";
+@import "placeholders";
+
+// * IMPORT FONTAWESOME STYLES
+@import '@fortawesome/fontawesome-svg-core/styles.css';
+

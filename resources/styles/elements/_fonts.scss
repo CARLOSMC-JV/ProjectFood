@@ -1,0 +1,79 @@
+a,
+.link {
+  color: $text-link-color;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+// * ================================================= TEXT TRANSFORM ================================================= * //
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+.lowercase {
+  text-transform: lowercase !important;
+}
+
+.capitalize {
+  text-transform: capitalize !important;
+}
+
+.no-underline {
+  text-transform: none !important;
+}
+
+
+// * ================================================= TEXT DECORATION ================================================= * //
+.underline {
+  text-decoration-line: underline !important;
+}
+
+.overline {
+  text-decoration-line: overline !important;
+}
+
+.line-through {
+  text-decoration-line: line-through !important;
+}
+
+.no-underline {
+  text-decoration-line: none !important;
+}
+
+// * ================================================= TEXT ALIGN ================================================= * //
+.text {
+    &-left {
+      text-align: left !important;
+    }
+  
+    &-right {
+      text-align: right !important;
+    }
+  
+    &-center {
+      text-align: center !important;
+    }
+  
+    &-justify {
+      text-align: justify !important;
+    }
+}
+
+// * ================================================= FONT WEIGHTS ================================================= * //
+.font {
+  &-light {
+    font-weight: $font-weight-light !important;
+  }
+
+  &-normal {
+    font-weight: $font-weight-normal !important;
+  }
+
+  &-semibold {
+    font-weight: $font-weight-semi-bold !important;
+  }
+
+  &-bold {
+    font-weight: $font-weight-bold !important;
+  }
+}

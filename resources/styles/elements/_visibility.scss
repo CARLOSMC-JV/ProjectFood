@@ -1,0 +1,11 @@
+$visibilities: (
+    visible: visible,
+    invisible: hidden,
+);
+
+@each $className,
+$visibility in $visibilities {
+    .#{$className} {
+        visibility: $visibility !important;
+    }
+}

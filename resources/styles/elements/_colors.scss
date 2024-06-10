@@ -1,0 +1,58 @@
+
+@import "@/styles/variables/_colors.scss";
+
+$colors: (
+    "primary": $primary-color,
+    "secondary": $secondary-color,
+    "success": $success-color,
+    "danger": $danger-color,
+    "brown": $brown-color,
+    "yellow": $yellow-color,
+    "dark": $dark-color,
+    "black": $black-color,
+    "grey": $grey-color,
+    "white": $white-color,
+);
+
+$lighterColors: (
+    "light-primary": $light-primary-color,
+    "light-secondary": $light-orange-color,
+    "light-success": $light-success-color,
+    "light-danger": $light-danger-color,
+    "light-grey": $light-grey-color,
+    "light-blue": $light-blue-color,
+);
+
+$darkerColors: (
+    "dark-primary": $dark-primary-color,
+    "dark-secondary": $dark-secondary-color,
+    "dark-success": $dark-success-color,
+    "dark-danger": $dark-danger-color,
+    "dark-grey": $dark-grey-color,
+);
+
+$allColors: (
+    base: $colors,
+    lighter: $lighterColors,
+    darker: $darkerColors,
+);
+
+// * ITERATE TROUGHT ALL COLORS LISTS
+@each $colorType,
+$colorList in $allColors {
+
+    @each $colorName,
+    $color in $colorList {
+        .text-#{$colorName} {
+            color: $color !important;
+        }
+
+        .bg-#{$colorName} {
+            background-color: $color !important;
+        }
+
+        .border-#{$colorName} {
+            border-color: $color !important;
+        }
+    }
+}

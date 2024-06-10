@@ -1,0 +1,118 @@
+$color-variation-amount: 5;
+
+$primary-color: #F06320;
+$secondary-color: #222f54;
+$success-color: #009048;
+$danger-color: #e11a26;
+$neutral-color: #adb5bd;
+$light-color:#6D768D;
+$brown-color: #7c5a0b;
+$yellow-color: #f7bc13;
+
+$grey-color: #6D768D;
+$dark-grey-color: #6F7689;
+
+// 
+$light-blue-color: #dde0ee;
+$light-grey-color: #edf1f8;
+$light-orange-color: #fce6db;
+
+// * LIGHT COLORS
+$light-primary-color: lighten(
+  $color: $primary-color,
+  $amount: $color-variation-amount,
+);
+$light-secondary-color: lighten(
+  $color: $secondary-color,
+  $amount: $color-variation-amount,
+);
+$light-success-color: lighten(
+  $color: $success-color,
+  $amount: $color-variation-amount,
+);
+$light-danger-color: lighten(
+  $color: $danger-color,
+  $amount: $color-variation-amount,
+);
+$light-neutral-color: lighten(
+  $color: $neutral-color,
+  $amount: $color-variation-amount,
+);
+$lighter-danger-color: lighten(
+  $color: $danger-color,
+  $amount: 40,
+);
+
+// * DARK COLORS
+$dark-primary-color: darken(
+  $color: $primary-color,
+  $amount: $color-variation-amount,
+);
+$dark-secondary-color: darken(
+  $color: $secondary-color,
+  $amount: $color-variation-amount,
+);
+$dark-success-color: darken(
+  $color: $success-color,
+  $amount: $color-variation-amount,
+);
+$dark-danger-color: darken(
+  $color: $danger-color,
+  $amount: $color-variation-amount,
+);
+$dark-neutral-color: darken(
+  $color: $neutral-color,
+  $amount: $color-variation-amount,
+);
+
+$white-color: #ffffff;
+$black-color: #000000;
+$dark-color: #212529;
+
+$text-dark-color-0: #212529;
+$text-dark-color-1: #343a40;
+$text-dark-color-2: #495057;
+$text-dark-color-3: #6D768D;
+$text-dark-color-4: #6c757d;
+$text-dark-color-5: #adb5bd;
+$text-dark-color-6: #ced4da;
+$text-dark-color-7: #eeeeee;
+$text-dark-color-8: #fafafa;
+
+$text-link-color: #337ab7;
+$text-menu-link-color: $text-dark-color-3;
+
+$text-default-button-color: $grey-color;
+$text-default-button-background: $text-dark-color-5;
+
+$page-background: $text-dark-color-7;
+
+// * PDFS
+$file-pdf-color: #ff0000;
+$file-word-color: #4d82b8;
+$file-excel-color: #228b22;
+
+// * TEMPORAL STYLES FOR STATES
+$green-state: #4ebc66;
+$green-state-light: #e6f6ea;
+
+$red-state: #e22828;
+$red-state-light: #fce5e5;
+
+$grey-state: #6d768d;
+$grey-state-light: #f1f3f9;
+
+$yellow-state: #d69a00;
+$yellow-state-light: #f9f1db;
+
+$orange-state: #f06320;
+$orange-state-light: #fff1eb;
+
+$black-state: #171f34;
+$black-state-light: #e4e6ea;
+
+$blue-state: #274295;
+$blue-state-light: #e4e6f1;
+
+$info-state: #26b4e0;
+$info-state-light: #e9f7fc;

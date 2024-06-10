@@ -1,0 +1,158 @@
+
+// * ================================================= PADDINGS ================================================= * //
+$dimensions: (
+    0: 0,
+    1: 0.25rem,
+    2: 0.5rem,
+    3: 0.75rem,
+    4: 1rem,
+    5: 1.25rem,
+    6: 1.5rem,
+    7: 1.75rem,
+    8: 2rem,
+    9: 2.25rem,
+    10: 2.5rem,
+    11: 2.75rem,
+    12: 3rem,
+    14: 3.5rem,
+    16: 4rem,
+    20: 5rem,
+    24: 6rem,
+    28: 7rem,
+    32: 8rem,
+    36: 9rem,
+    40: 10rem,
+    44: 11rem,
+    48: 12rem,
+    52: 13rem,
+    56: 14rem,
+    60: 15rem,
+    64: 16rem,
+    72: 18rem,
+    80: 20rem,
+    96: 24rem,
+    auto: auto,
+);
+
+$prefixes: "p", "px", "py", "pt", "pb", "pr", "pl";
+
+@each $prefix in $prefixes {
+    @each $paddingNumber, $padding in $dimensions {
+        @if $prefix == "p" {
+            .#{$prefix}-#{$paddingNumber} {
+                padding: $padding !important;
+            }
+            .-#{$prefix}-#{$paddingNumber} {
+                padding: -$padding !important;
+            }
+        } @else if $prefix == "px" {
+            .#{$prefix}-#{$paddingNumber} {
+                padding-left: $padding !important;
+                padding-right: $padding !important;
+            }
+            .-#{$prefix}-#{$paddingNumber} {
+                padding-left: -$padding !important;
+                padding-right: -$padding !important;
+            }
+        } @else if $prefix == "py" {
+            .#{$prefix}-#{$paddingNumber} {
+                padding-top: $padding !important;
+                padding-bottom: $padding !important;
+            }
+            .-#{$prefix}-#{$paddingNumber} {
+                padding-top: -$padding !important;
+                padding-bottom: -$padding !important;
+            }
+        } @else if $prefix == "pt" {
+            .#{$prefix}-#{$paddingNumber} {
+                padding-top: $padding !important;
+            }
+            .-#{$prefix}-#{$paddingNumber} {
+                padding-top: -$padding !important;
+            }
+        } @else if $prefix == "pb" {
+            .#{$prefix}-#{$paddingNumber} {
+                padding-bottom: $padding !important;
+            }
+            .-#{$prefix}-#{$paddingNumber} {
+                padding-bottom: -$padding !important;
+            }
+        } @else if $prefix == "pr" {
+            .#{$prefix}-#{$paddingNumber} {
+                padding-right: $padding !important;
+            }
+            .-#{$prefix}-#{$paddingNumber} {
+                padding-right: -$padding !important;
+            }
+        } @else if $prefix == "pl" {
+            .#{$prefix}-#{$paddingNumber} {
+                padding-left: $padding !important;
+            }
+            .-#{$prefix}-#{$paddingNumber} {
+                padding-left: -$padding !important;
+            }
+        }
+    }
+}
+
+// * ================================================= MARGINS ================================================= * //
+$marginPrefixes: "m", "mx", "my", "mt", "mb", "mr", "ml";
+
+@each $prefix in $marginPrefixes {
+    @each $marginNumber, $margin in $dimensions {
+        @if $prefix == "m" {
+            .#{$prefix}-#{$marginNumber} {
+                margin: $margin !important;
+            }
+            .-#{$prefix}-#{$marginNumber} {
+                margin: -$margin !important;
+            }
+        } @else if $prefix == "mx" {
+            .#{$prefix}-#{$marginNumber} {
+                margin-left: $margin !important;
+                margin-right: $margin !important;
+            }
+            .-#{$prefix}-#{$marginNumber} {
+                margin-left: -$margin !important;
+                margin-right: -$margin !important;
+            }
+        } @else if $prefix == "my" {
+            .#{$prefix}-#{$marginNumber} {
+                margin-top: $margin !important;
+                margin-bottom: $margin !important;
+            }
+            .-#{$prefix}-#{$marginNumber} {
+                margin-top: -$margin !important;
+                margin-bottom: -$margin !important;
+            }
+        } @else if $prefix == "mt" {
+            .#{$prefix}-#{$marginNumber} {
+                margin-top: $margin !important;
+            }
+            .-#{$prefix}-#{$marginNumber} {
+                margin-top: -$margin !important;
+            }
+        } @else if $prefix == "mb" {
+            .#{$prefix}-#{$marginNumber} {
+                margin-bottom: $margin !important;
+            }
+            .-#{$prefix}-#{$marginNumber} {
+                margin-bottom: -$margin !important;
+            }
+        } @else if $prefix == "mr" {
+            .#{$prefix}-#{$marginNumber} {
+                margin-right: $margin !important;
+            }
+            .-#{$prefix}-#{$marginNumber} {
+                margin-right: -$margin !important;
+            }
+        } @else if $prefix == "ml" {
+            .#{$prefix}-#{$marginNumber} {
+                margin-left: $margin !important;
+            }
+            .-#{$prefix}-#{$marginNumber} {
+                margin-left: -$margin !important;
+            }
+        }
+    }
+}

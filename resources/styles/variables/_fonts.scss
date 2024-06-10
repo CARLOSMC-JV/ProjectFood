@@ -1,0 +1,49 @@
+
+@font-face {
+    src: url(~assets/fonts/HelveticaNeueRegular.ttf);
+    font-family: HelveticaNeueRegular;
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    src: url(~assets/fonts/HelveticaNeueBold.ttf);
+    font-family: HelveticaNeueBold;
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    src: url(~assets/fonts/Poppins-Regular.ttf);
+    font-family: PoppinsRegular;
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-family-general: HelveticaNeueRegular, "Helvetica Neue", sans-serif;
+
+$font-size-0: 13px;
+$font-size-1: 16px;
+$font-size-2: 21px;
+$font-size-3: 28px;
+$font-size-4: 37px;
+$font-size-5: 48px;
+
+$text-size-h1: 32px;
+$text-size-h2: 24px;
+$text-size-h3: 20px;
+$text-size-h4: 16px;
+$text-size-h5: 14px;
+$text-size-h6: 12px;
+
+$text-size-body: 1rem;
+$text-size-small: 0.9rem;
+$text-size-medium: $text-size-h5;
+
+$font-weight-light: 400;
+$font-weight-normal: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: bold;

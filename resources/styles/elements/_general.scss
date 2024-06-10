@@ -1,0 +1,199 @@
+* {
+    // margin: 0;
+    // padding: 0;
+    box-sizing: border-box;
+    font-family: HelveticaNeueRegular, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+// body {
+//   line-height: 1.42857143;
+//   background-color: $page-background;
+//   min-height: 100vh;
+// }
+
+// b {
+//   font-size: inherit;
+// }
+
+/* GENERAL STYLES */
+// .container {
+//     width: 100%;
+//     padding-left: 5%;
+//     padding-right: 5%;
+// }
+
+.card {
+    background: white;
+    // padding: 1.8rem 2.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    color: $secondary-color;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease;
+
+    &:hover {
+        transition: background 0.3s ease-in-out, box-shadow 0.3s ease;
+        background: rgb(255, 255, 255);
+        box-shadow: rgb(0 0 0 / 12%) 0px 4px 12px;
+        // border: 1px solid $secondary-color;
+    }
+}
+
+.vue-notification-group {
+    margin-top: 0.5rem;
+}
+
+.ab-label {
+    color: $dark-color;
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.ab-description {
+    color: $grey-color;
+    display: block;
+    font-size: .875rem;
+    margin-bottom: .9rem;
+}
+
+.ab-icon {
+    color: $grey-color;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.ab-basic-icon {
+    width: 1.1rem;
+}
+
+// * BASIC LIST
+.ab-list {
+    padding: 1rem 0;
+
+    .ab-list-item {
+        align-items: center;
+        display: flex;
+        padding: 0.5rem 0;
+
+        >* {
+            &:not(:last-child) {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}
+
+// * TITLE
+.ab-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: $text-dark-color-3;
+}
+
+// * SUBTITLE
+.ab-subtitle {
+    font-weight: bold;
+    font-size: 1rem;
+    color: $text-dark-color-3;
+    // font-family: HelveticaNeueBold, HelveticaNeueRegular, Arial, Helvetica, sans-serif;
+}
+
+// * TEXT
+.ab-text {
+    font-weight: normal;
+    font-size: 1rem;
+    color: $text-dark-color-3;
+}
+
+// * SPAN
+.ab-span {
+    color: $text-dark-color-3;
+    display: inline-block;
+    font-weight: bold;
+}
+
+// * Checkbox
+// .ab-checkbox-container {
+//     display: flex;
+//     align-items: center;
+//     position: relative;
+//     margin: 0.5rem 0;
+
+//     input.ab-checkbox {
+//         margin-right: 0.5rem;
+//     }
+
+//     .ab-label {
+//         margin: 0;
+//     }
+// }
+
+// * CONTROL
+// .ab-control {
+//     box-sizing: border-box;
+//     clear: both;
+//     font-size: 1rem;
+//     position: relative;
+//     text-align: inherit;
+//     width: 100%;
+
+//     -webkit-appearance: none;
+//     align-items: center;
+//     background-color: $white-color;
+//     border: 1px solid #c4c4c4;
+//     border-radius: 0.5rem;
+//     box-shadow: none;
+//     display: flex;
+//     height: 3.2rem;
+//     // justify-content: flex-start;
+//     // line-height: 1.5;
+//     vertical-align: top;
+
+//     &.input-error {
+//         border-color: $danger-color;
+
+//         &:hover {
+//             border-color: $danger-color;
+//         }
+
+//         &:active,
+//         &:focus-within {
+//             border-color: $danger-color;
+//             box-shadow: 0 0 0 0.125em #ffcbcb;
+//             outline: 0;
+//         }
+//     }
+
+//     &.input-success {
+//         border-color: $success-color;
+
+//         &:hover {
+//             border-color: $success-color;
+//         }
+
+//         &:active,
+//         &:focus-within {
+//             border-color: $success-color;
+//             box-shadow: 0 0 0 0.125em #bde3c7;
+//             outline: 0;
+//         }
+//     }
+
+//     &:hover {
+//         border-color: #b5b5b5;
+//     }
+
+//     &:active,
+//     &:focus-within {
+//         border-color: #485fc7;
+//         box-shadow: 0 0 0 0.125em rgb(72 95 199 / 25%);
+//         outline: 0;
+//     }
+// }

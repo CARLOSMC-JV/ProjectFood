@@ -1,0 +1,92 @@
+@import "@/styles/variables";
+
+.table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  color: $secondary-color;
+  text-align: center;
+
+  &__wrapper {
+    max-height: 700px;
+    overflow: auto;
+    overflow: scroll;
+  }
+
+  &__header {
+    font-weight: bold;
+    display: table-header-group;
+
+    &--sticky {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+  }
+
+  &__body {
+    display: table-row-group;
+  }
+
+  &__row {
+    display: table-row;
+  }
+
+  &__column,
+  &__cell {
+    flex: 1;
+    min-height: 60px;
+    min-width: 150px;
+    padding: $spacing-1;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    // border-bottom: 1px solid $border-color;
+
+    &--left {
+      text-align: left;
+    }
+
+    &--primary {
+      background-color: $primary-color;
+    }
+
+    &--secondary {
+      background-color: $secondary-color;
+    }
+  }
+
+  &__cell {
+    font-size: 12px;
+  }
+
+  &__header &__row {
+    min-height: 60px;
+    height: 60px;
+  }
+
+  &--striped &__body &__row {
+    &:nth-child(even) {
+      background-color: #f2f3f9;
+    }
+  }
+
+  &--striped-alt &__body &__row {
+    &:nth-child(odd) {
+      background-color: #f2f3f9;
+    }
+  }
+
+  &--primary &__header &__row:first-child,
+  &--primary &__header &__row--color {
+    background-color: $primary-color;
+    color: white;
+  }
+
+  &--secondary &__header &__row:first-child,
+  &--secondary &__header &__row--color {
+    background-color: $secondary-color;
+    color: white;
+  }
+}

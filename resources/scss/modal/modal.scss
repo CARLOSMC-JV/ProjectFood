@@ -1,0 +1,18 @@
+.contain-modal{
+    max-height: 650px;
+    overflow-y: scroll;
+    .p-3{
+        input::placeholder{
+            opacity: 0.4;
+        }
+    }
+}
+
+.contain-product{
+    .img-box{
+        img{
+            width: 50px;
+        }
+    }
+
+}

@@ -1,0 +1,220 @@
+@import "resources/styles/variables";
+
+// * MOBILE FIRST
+// Small devices (phones, 576px and up)
+@mixin small {
+    @media only screen and (min-width: $breakpoint-small) {
+        @content;
+    }
+}
+
+// Medium devices (tablets, 769px and up)
+@mixin medium {
+    @media only screen and (min-width: $breakpoint-medium) {
+        @content;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin large {
+    @media only screen and (min-width: $breakpoint-large) {
+        @content;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin xlarge {
+    @media only screen and (min-width: $breakpoint-xlarge) {
+        @content;
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin x2large {
+    @media only screen and (min-width: $breakpoint-x2large) {
+        @content;
+    }
+}
+
+// XXX-Large devices (larger desktops, 1680px and up)
+@mixin x3large {
+    @media only screen and (min-width: $breakpoint-x3large) {
+        @content;
+    }
+}
+
+// XXXX-Large devices (larger desktops, 1920px and up)
+@mixin x4large {
+    @media only screen and (min-width: $breakpoint-x4large) {
+        @content;
+    }
+}
+
+// Small devices (phones, 576px and down)
+@mixin small-down {
+    @media only screen and (max-width: $breakpoint-small) {
+        @content;
+    }
+}
+
+// Medium devices (tablets, 769px and down)
+@mixin medium-down {
+    @media only screen and (max-width: $breakpoint-medium) {
+        @content;
+    }
+}
+
+// Large devices (desktops, 992px and down)
+@mixin large-down {
+    @media only screen and (max-width: $breakpoint-large) {
+        @content;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and down)
+@mixin xlarge-down {
+    @media only screen and (max-width: $breakpoint-xlarge) {
+        @content;
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and down)
+@mixin x2large-down {
+    @media only screen and (max-width: $breakpoint-x2large) {
+        @content;
+    }
+}
+
+// XXX-Large devices (larger desktops, 1680px and down)
+@mixin x3large-down {
+    @media only screen and (max-width: $breakpoint-x3large) {
+        @content;
+    }
+}
+
+// XXXX-Large devices (larger desktops, 1920px and down)
+@mixin x4large-down {
+    @media only screen and (max-width: $breakpoint-x4large) {
+        @content;
+    }
+}
+
+// * DESKTOP FIRST
+// Small devices (phones only)
+@mixin small-only {
+    @media only screen and (max-width: $breakpoint-medium) {
+        @content;
+    }
+}
+
+// Medium devices (tablets only)
+@mixin medium-only {
+    @media only screen and (min-width: $breakpoint-medium) and (max-width: $breakpoint-large) {
+        @content;
+    }
+}
+
+// Large devices (desktops only)
+@mixin large-only {
+    @media only screen and (min-width: $breakpoint-large) and (max-width: $breakpoint-xlarge) {
+        @content;
+    }
+}
+
+// X-Large devices (large desktops only)
+@mixin xlarge-only {
+    @media only screen and (min-width: $breakpoint-xlarge) and (max-width: $breakpoint-x2large) {
+        @content;
+    }
+}
+
+// XX-Large devices (larger desktops only)
+@mixin x2large-only {
+    @media only screen and (min-width: $breakpoint-x2large) and (max-width: $breakpoint-x3large) {
+        @content;
+    }
+}
+
+// XXX-Large devices (larger desktops only)
+@mixin x3large-only {
+    @media only screen and (min-width: $breakpoint-x3large) and (max-width: $breakpoint-x4large) {
+        @content;
+    }
+}
+
+// XXXX-Large devices (larger desktops only)
+@mixin x4large-only {
+    @media only screen and (min-width: $breakpoint-x4large) {
+        @content;
+    }
+}
+
+// * EXCEPT SECTION
+// Small devices (phones except)
+@mixin small-except {
+    @media only screen and (min-width: $breakpoint-small) {
+        @content;
+    }
+}
+
+// Medium devices (tablets except)
+@mixin medium-except {
+    @media only screen and (max-width: $breakpoint-small) {
+        @content;
+    }
+
+    @media only screen and (min-width: $breakpoint-medium) {
+        @content;
+    }
+}
+
+// Large devices (desktops except)
+@mixin large-except {
+    @media only screen and (max-width: $breakpoint-medium) {
+        @content;
+    }
+
+    @media only screen and (min-width: $breakpoint-large) {
+        @content;
+    }
+}
+
+// X-Large devices (large desktops except)
+@mixin xlarge-except {
+    @media only screen and (max-width: $breakpoint-large) {
+        @content;
+    }
+
+    @media only screen and (min-width: $breakpoint-xlarge) {
+        @content;
+    }
+}
+
+// XX-Large devices (larger desktops except)
+@mixin x2large-except {
+    @media only screen and (max-width: $breakpoint-xlarge) {
+        @content;
+    }
+
+    @media only screen and (min-width: $breakpoint-x2large) {
+        @content;
+    }
+}
+
+// XX-Large devices (larger desktops except)
+@mixin x3large-except {
+    @media only screen and (max-width: $breakpoint-x2large) {
+        @content;
+    }
+
+    @media only screen and (max-width: $breakpoint-x3large) {
+        @content;
+    }
+}
+
+// XX-Large devices (larger desktops except)
+@mixin x4large-except {
+    @media only screen and (max-width: $breakpoint-x4large) {
+        @content;
+    }
+}

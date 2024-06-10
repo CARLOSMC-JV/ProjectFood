@@ -1,0 +1,20 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: $spacing-1;
+  gap: $spacing-1;
+  width: 100%;
+
+  &--no-gap-row {
+    row-gap: 0;
+  }
+
+  &--no-gap-column {
+    column-gap: 0;
+  }
+
+  label,
+  .field {
+    margin: 0;
+  }
+}
